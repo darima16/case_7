@@ -1,4 +1,5 @@
-"""Case-study #7 Генерация предложений
+# coding=utf-8
+""" #7 Генерация предложений
 Разработчики:
 Жамбаева Д., Зыкова К.
 
@@ -41,6 +42,13 @@ def text_editing(text):
         text = text.replace(' ,', ",")
     return text
 
+text = read()
+
+list_text = list(text.split())
+print(list_text)
+
+dicter = made_dict(list_text)
+print(dicter)
 
 text_list = list(text)
 start = []
@@ -49,7 +57,7 @@ for t in text_list:
         if not t in start:
             start.append(t)
 
-
+print(start)
 
 
 
